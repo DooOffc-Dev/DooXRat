@@ -1,0 +1,244 @@
+.victim-detail {
+  min-height: 100vh;
+  padding: 24px;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(30, 35, 60, 0.6);
+  color: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.back-btn:hover {
+  background: rgba(87, 101, 242, 0.2);
+  border-color: #5765f2;
+}
+
+.victim-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.victim-info h1 {
+  font-size: 28px;
+  color: #e0e0e0;
+}
+
+.status-indicator {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-indicator.online {
+  background: rgba(46, 213, 115, 0.2);
+  color: #2ed573;
+}
+
+.status-indicator.offline {
+  background: rgba(255, 71, 87, 0.2);
+  color: #ff4757;
+}
+
+.tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(30, 35, 60, 0.6);
+  color: #888;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  background: rgba(30, 35, 60, 0.8);
+  color: #e0e0e0;
+}
+
+.tab.active {
+  background: linear-gradient(135deg, #ff4757 0%, #ff6348 100%);
+  border-color: #ff4757;
+  color: white;
+}
+
+.tab-content {
+  background: rgba(30, 35, 60, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 24px;
+  min-height: 400px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  background: rgba(20, 25, 45, 0.6);
+  border-radius: 8px;
+}
+
+.info-item .label {
+  color: #888;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-item .value {
+  color: #e0e0e0;
+  font-size: 16px;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.data-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fetch-btn {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #5765f2 0%, #7c88ff 100%);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.fetch-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(87, 101, 242, 0.4);
+}
+
+.data-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.data-card {
+  padding: 16px;
+  background: rgba(20, 25, 45, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.data-card:hover {
+  background: rgba(20, 25, 45, 0.8);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.card-header strong {
+  color: #e0e0e0;
+  font-size: 15px;
+}
+
+.timestamp {
+  color: #888;
+  font-size: 12px;
+}
+
+.data-card p {
+  color: #b0b0b0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.call-type {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.call-type.incoming {
+  background: rgba(46, 213, 115, 0.2);
+  color: #2ed573;
+}
+
+.call-type.outgoing {
+  background: rgba(87, 101, 242, 0.2);
+  color: #5765f2;
+}
+
+.call-type.missed {
+  background: rgba(255, 71, 87, 0.2);
+  color: #ff4757;
+}
+
+.location-display {
+  padding: 20px;
+  background: rgba(20, 25, 45, 0.6);
+  border-radius: 8px;
+}
+
+.location-display p {
+  color: #e0e0e0;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.location-display strong {
+  color: #5765f2;
+  margin-right: 8px;
+}
+
+.not-found {
+  text-align: center;
+  padding: 48px;
+  color: #888;
+  font-size: 18px;
+}
